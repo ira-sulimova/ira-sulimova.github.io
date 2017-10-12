@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <generator uri="http://jekyllrb.com" version="3.4.5">Jekyll</generator>
+  
+  
+  <link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="http://localhost:4000/" rel="alternate" type="text/html" />
+  <updated>2017-10-11T22:36:19-04:00</updated>
+  <id>http://localhost:4000//</id>
+
+  
+    <title type="html">Ira Sulimova</title>
+  
+
+  
+
+  
+
+  
+  
+    <entry>
+      
+      <title type="html">Welcome</title>
+      
+      <link href="http://localhost:4000/2017/10/11/hey-there/" rel="alternate" type="text/html" title="Welcome" />
+      <published>2017-10-11T21:33:34-04:00</published>
+      <updated>2017-10-11T21:33:34-04:00</updated>
+      <id>http://localhost:4000/2017/10/11/hey-there</id>
+      <content type="html" xml:base="http://localhost:4000/2017/10/11/hey-there/">&lt;p&gt;Hey there.&lt;/p&gt;
+
+&lt;p&gt;This is my first (test) post.&lt;/p&gt;
+
+&lt;p&gt;In this blog, I just want to share some of things I discover on a daily basis, and some of my code. I’m not big on writing, so this is a pretty huge step out of my comfort zone.&lt;/p&gt;
+
+&lt;p&gt;So, please,&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;visitors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;enjoy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content>
+
+      
+      
+      
+      
+      
+
+      
+
+      
+        <category term="intro" />
+      
+
+      
+
+      
+        <summary type="html">Hey there.</summary>
+      
+
+      
+      
+    </entry>
+  
+  
+</feed>
