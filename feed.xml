@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <generator uri="http://jekyllrb.com" version="3.6.0">Jekyll</generator>
+  <generator uri="http://jekyllrb.com" version="3.4.5">Jekyll</generator>
   
   
   <link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2017-10-16T22:10:22-04:00</updated>
+  <updated>2017-10-18T13:32:19-04:00</updated>
   <id>http://localhost:4000//</id>
 
   
@@ -22,11 +22,11 @@
       
       <title type="html">Computer Reset Notes</title>
       
-      <link href="http://localhost:4000/2017/10/11/computer-reset/" rel="alternate" type="text/html" title="Computer Reset Notes" />
-      <published>2017-10-11T21:33:34-04:00</published>
-      <updated>2017-10-11T21:33:34-04:00</updated>
-      <id>http://localhost:4000/2017/10/11/computer-reset</id>
-      <content type="html" xml:base="http://localhost:4000/2017/10/11/computer-reset/">&lt;p&gt;It’s a good practice to reset your heavily used machine every once in a while. Usually, I wipe my mac at least once a year. I like having a fresh start without any clutter on my laptop (although I could restore it from the latest backup, I never want to).&lt;/p&gt;
+      <link href="http://localhost:4000/2017/10/16/computer-reset/" rel="alternate" type="text/html" title="Computer Reset Notes" />
+      <published>2017-10-16T20:12:15-04:00</published>
+      <updated>2017-10-16T20:12:15-04:00</updated>
+      <id>http://localhost:4000/2017/10/16/computer-reset</id>
+      <content type="html" xml:base="http://localhost:4000/2017/10/16/computer-reset/">&lt;p&gt;It’s a good practice to reset your heavily used machine every once in a while. Usually, I wipe my mac at least once a year. I like having a fresh start without any clutter on my laptop (although I could restore it from the latest backup, I never want to).&lt;/p&gt;
 
 &lt;p&gt;With all the modern tools, wiping and reinstalling the OS is pretty simple - just keep clicking the “Next” button and in less than an hour it’s done. As a result, you get a “brand new” computer, as if you just came back from the Apple store with a new laptop.&lt;/p&gt;
 
@@ -36,32 +36,43 @@
 
 &lt;p&gt;Set up the symbolic link.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;ln &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; /Applications/SublimeText.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;ln -s /Applications/SublimeText.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Highlight unsaved files.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-json&quot; data-lang=&quot;json&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;highlight_modified_tabs&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;highlight_modified_tabs&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;conda&quot;&gt;Conda&lt;/h2&gt;
 
 &lt;p&gt;Create environment.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda create --name bunnies python=3.5
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda create --name bunnies python=3.5
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Check what environments are installed.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda info --envs
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda info --envs
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;git&quot;&gt;Git&lt;/h2&gt;
 
 &lt;p&gt;Don’t forget to set your git email account properly, or your commits will show up under your computer’s local name.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config --global user.email &quot;git@email.com&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content>
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config --global user.email &quot;git@email.com&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;bash&quot;&gt;Bash&lt;/h2&gt;
+
+&lt;p&gt;To change the shell prompt, you need to set the variable &lt;em&gt;PS1&lt;/em&gt;. The special character for the current directory is &lt;strong&gt;\w&lt;/strong&gt;. Add this line to &lt;strong&gt;~/.bash_profile&lt;/strong&gt; file.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;export PS1=&quot;[\w ] $ &quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content>
 
       
       

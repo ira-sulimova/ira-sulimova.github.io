@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  
+  
+  <title>Computer Reset Notes</title>
+  <meta name="description" content="It’s a good practice to reset your heavily used machine every once in a while. Usually, I wipe my mac at least once a year. I like having a fresh start without any clutter on my laptop (although I could restore it from the latest backup, I never want to).">
+  
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://localhost:4000/2017/10/16/computer-reset/">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Ira Sulimova" href="http://localhost:4000/feed.xml">
+
+  
+
+  
+  <meta name="twitter:card" content="summary">
+  
+  <meta name="twitter:title" content="Computer Reset Notes">
+  <meta name="twitter:description" content="It’s a good practice to reset your heavily used machine every once in a while. Usually, I wipe my mac at least once a year. I like having a fresh start without any clutter on my laptop (although I ...">
+  
+  
+
+  <script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Bitter:400,700,400italic:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+</script>
+
+  
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Ira Sulimova</a>
+
+    <nav class="site-nav">
+      
+        
+        <a class="page-link" href="/about/">About</a>
+      
+        
+        <a class="page-link" href="/archives/">Archives</a>
+      
+        
+        <a class="page-link" href="https://github.com/ira-sulimova">GitHub</a>
+      
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    
+      <h1 class="post-title" itemprop="name headline">Computer Reset Notes</h1>
+    
+    <p class="post-meta"><time datetime="2017-10-16T20:12:15-04:00" itemprop="datePublished">Oct 16, 2017</time> • 
+  
+  
+    
+  
+    
+      <a href="/categories/notes/">notes</a>
+    
+  
+
+</p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>It’s a good practice to reset your heavily used machine every once in a while. Usually, I wipe my mac at least once a year. I like having a fresh start without any clutter on my laptop (although I could restore it from the latest backup, I never want to).</p>
+
+<p>With all the modern tools, wiping and reinstalling the OS is pretty simple - just keep clicking the “Next” button and in less than an hour it’s done. As a result, you get a “brand new” computer, as if you just came back from the Apple store with a new laptop.</p>
+
+<p>What is super painful, though, is setting up the tools that make our lives so much easier. I’m finally making a list of things I always go searching for after my annual wipe.</p>
+
+<h2 id="sublime">Sublime</h2>
+
+<p>Set up the symbolic link.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">ln -s /Applications/SublimeText.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl</code></pre></figure>
+
+<p>Highlight unsaved files.</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="nt">"highlight_modified_tabs"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+<h2 id="conda">Conda</h2>
+
+<p>Create environment.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>conda create --name bunnies python=3.5
+</code></pre>
+</div>
+
+<p>Check what environments are installed.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>conda info --envs
+</code></pre>
+</div>
+
+<h2 id="git">Git</h2>
+
+<p>Don’t forget to set your git email account properly, or your commits will show up under your computer’s local name.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git config --global user.email "git@email.com"
+</code></pre>
+</div>
+
+<h2 id="bash">Bash</h2>
+
+<p>To change the shell prompt, you need to set the variable <em>PS1</em>. The special character for the current directory is <strong>\w</strong>. Add this line to <strong>~/.bash_profile</strong> file.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>export PS1="[\w ] $ "
+</code></pre>
+</div>
+
+  </div>
+
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <p>
+      
+
+&copy;  - Powered by <a href="https://jekyllrb.com">Jekyll</a> &amp; <a href="https://github.com/yous/whiteglass">whiteglass</a> - Subscribe via <a href="http://localhost:4000/feed.xml">RSS</a>
+
+    </p>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
