@@ -5,7 +5,7 @@
   
   <link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2017-10-18T13:37:47-04:00</updated>
+  <updated>2017-10-18T13:55:45-04:00</updated>
   <id>http://localhost:4000//</id>
 
   
@@ -68,9 +68,9 @@
 
 &lt;h2 id=&quot;bash&quot;&gt;Bash&lt;/h2&gt;
 
-&lt;p&gt;To change the shell prompt, you need to set the variable &lt;em&gt;PS1&lt;/em&gt;. The special character for the current directory is &lt;strong&gt;\w&lt;/strong&gt;. Add this line to &lt;strong&gt;~/.bash_profile&lt;/strong&gt; file.&lt;/p&gt;
+&lt;p&gt;To change the shell prompt, you need to set the variable &lt;em&gt;PS1&lt;/em&gt;. The special character for the current directory is &lt;strong&gt;\W&lt;/strong&gt;. Add this line to &lt;strong&gt;~/.bash_profile&lt;/strong&gt; file.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;export PS1=&quot;[\w ] $ &quot;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;export PS1=&quot;[\W] $ &quot;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;</content>
 
