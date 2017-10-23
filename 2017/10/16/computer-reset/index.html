@@ -60,7 +60,7 @@
     <nav class="site-nav">
       
         
-        <a class="page-link" href="/about/">About</a>
+        <a class="page-link" href="/blog/">Blog</a>
       
         
         <a class="page-link" href="/archives/">Archives</a>
@@ -107,43 +107,39 @@
 
 <p>Set up the symbolic link.</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash">ln -s /Applications/SublimeText.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl</code></pre></figure>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">ln <span class="nt">-s</span> /Applications/SublimeText.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl</code></pre></figure>
 
 <p>Highlight unsaved files.</p>
 
 <figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
-    </span><span class="nt">"highlight_modified_tabs"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+    </span><span class="s2">"highlight_modified_tabs"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span><span class="p">}</span></code></pre></figure>
 
 <h2 id="conda">Conda</h2>
 
 <p>Create environment.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>conda create --name bunnies python=3.5
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda create --name bunnies python=3.5
+</code></pre></div></div>
 
 <p>Check what environments are installed.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>conda info --envs
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda info --envs
+</code></pre></div></div>
 
 <h2 id="git">Git</h2>
 
 <p>Don’t forget to set your git email account properly, or your commits will show up under your computer’s local name.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>git config --global user.email "git@email.com"
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --global user.email "git@email.com"
+</code></pre></div></div>
 
 <h2 id="bash">Bash</h2>
 
-<p>To change the shell prompt, you need to set the variable <em>PS1</em>. The special character for the current directory is <strong>\W</strong>. Add this line to <strong>~/.bash_profile</strong> file.</p>
+<p>To change the shell prompt, modify the variable <em>PS1</em>. The special character for the current directory is <strong>\w</strong>.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>export PS1="[\W] $ "
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ PS1="[\w ] $ "
+</code></pre></div></div>
 
   </div>
 
