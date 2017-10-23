@@ -11,9 +11,9 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 400 16px/1.5 Bitter, "Apple SD Gothic Neo", AppleGothic, NanumBarunGothic, "Malgun Gothic", Dotum, sans-serif;
-  color: #111;
-  background-color: #fdfdfd;
+  font: 400 18px/1.5 Helvetica;
+  color: #333;
+  background-color: #ffffff;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -44,7 +44,7 @@ figure > img {
   display: block; }
 
 figcaption {
-  font-size: 14px; }
+  font-size: 15.75px; }
 
 /**
  * Lists
@@ -73,7 +73,7 @@ a {
   a:visited {
     color: #1d508f; }
   a:hover {
-    color: #111;
+    color: #333;
     text-decoration: underline; }
 
 /**
@@ -166,7 +166,7 @@ pre {
   float: right;
   line-height: 56px; }
   .site-nav .page-link {
-    color: #111;
+    color: #333;
     line-height: 1.5; }
     .site-nav .page-link:not(:last-child) {
       margin-right: 20px; }
@@ -215,11 +215,11 @@ pre {
     margin-bottom: 30px; }
 
 .post-meta {
-  font-size: 14px;
+  font-size: 15.75px;
   color: #828282; }
 
 .post-link, .post-link:visited {
-  color: #111; }
+  color: #333; }
 .post-link:hover {
   color: #2568ba; }
 
